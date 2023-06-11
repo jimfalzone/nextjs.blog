@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <Layout home>
       <Head>
-        <title>medicalclaimsphysicianreviewer</title>
+        <title>Medical Claims Physician Reviewer</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <h2>Improving Healthcare Outcomes Through Accurate and Thorough Medical Claims Review</h2>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)

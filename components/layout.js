@@ -3,20 +3,21 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Navigation from './navigation';
 
-const name = 'Jamie Armstrong';
+const name = 'Medical Claims Physician Reviewer';
 export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <Head>
+      <Head>                               
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
-        />
-        <meta
+        />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        <meta                  
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
             siteTitle,
@@ -26,6 +27,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+                <Navigation />
         {home ? (
           <>
             <Image
