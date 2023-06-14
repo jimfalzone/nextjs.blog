@@ -1,1 +1,34 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.btn-custom {
+    background-color: #011343;
+    color: #ffffff;
+  }
+  
+  .btn-custom:hover {
+    background-color: #002b5b;
+  }
+  
+
+  
+  /* Update the accordion header text color */
+  .accordion-header .accordion-button {
+    color: red;
+  }
+  
+  .section-expandable .section-expandable-.section-expandable-content-expanded, .section-expandable .section-expandable-content.is--expanded {
+
+    background-color: green;
+
+}
+
+.accordion-body {
+    background-color: green;
+    /* Add any other custom styles you want */
+  }
+  
+.bg-primary {
+    /* background-color: #818a9d !important; */
+    background-color: #011343 !important;
+    color: white !important;
+}

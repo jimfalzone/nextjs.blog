@@ -18,18 +18,13 @@ const Navigation = () => {
                     <div className="navbar-brand">
                         <Image
                             priority
-                            src="/images/logo.png"
-                            height={120}
-                            width={120}
+                            src="/images/logo4.png"
+                            height={160}
+                            width={160}
                             alt=""
                         />
                     </div>
                 </Link>
-                <div className="">
-                    <Link href="/">
-                        <span className="navbar-brand">Home</span>
-                    </Link>
-                </div>
             </div>
             <button
                 className="navbar-toggler"
@@ -41,6 +36,20 @@ const Navigation = () => {
             <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}>
                 <ul className="navbar-nav mx-auto">
                     <li className="nav-item">
+                        <Link href="/">
+                            <span
+                                className={
+                                    router.asPath === '/'
+                                        ? 'nav-link active'
+                                        : 'nav-link'
+                                }
+                            >
+                                Home
+                            </span>
+                        </Link>
+                    </li>
+
+                    <li className="nav-item">
                         <Link href="/posts/first-post">
                             <span
                                 className={
@@ -49,10 +58,12 @@ const Navigation = () => {
                                         : 'nav-link'
                                 }
                             >
-                                First Post
+                                FirstPost
                             </span>
                         </Link>
                     </li>
+
+
                     {/* Add more navigation links as needed */}
                 </ul>
             </div>
