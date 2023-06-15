@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
+import React from "react";
+import { Grid, Dropdown, Radio } from "@nextui-org/react";
 
 const Navigation = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);

@@ -3,7 +3,7 @@ import React from 'react';
 const Introduction = () => {
     return (
         <section>
-            <div className="container" style={({ marginTop: '100px' })}>
+            <div className="container" style={({ marginTop: '150px' })}>
                 <div className="row">
                     <div className="col-lg-12">
                         <h2 className="text-center mb-4">Why Partner With Us?</h2>
@@ -20,7 +20,7 @@ const Introduction = () => {
                                         type="button"
                                         data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne"
-                                        aria-expanded="false"
+                                        aria-expanded="false" // Update the aria-expanded attribute to "true"
                                         aria-controls="collapseOne"
                                     >
                                         Improved accuracy and compliance
