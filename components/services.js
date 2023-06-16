@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Services = () => {
     return (
-        <section>
+        <section id="services">
             <Container style={{ marginTop: '150px' }}>
                 <h2 className="text-center mb-4">Services Offered</h2>
                 <Row>

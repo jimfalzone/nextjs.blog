@@ -1,0 +1,12 @@
+.panel-default > .panel-heading {
+    background-color: red;
+}
+
+.panel-flashy {
+    border-color: #FF934F;
+  }
+.panel-flashy > .panel-heading {
+     color:#fff;
+     background-color:#FF934F;
+     border-color:#ff934f;
+}

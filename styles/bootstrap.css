@@ -1,71 +1,107 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.navbar-brand {
+  margin-right: 1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 1rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .btn-custom {
-    background-color: #011343;
-    color: #ffffff;
-  }
-  
-  .btn-custom:hover {
-    background-color: #002b5b;
-  }
-  
+  background-color: #011343;
+  color: #ffffff;
+}
 
-  
-  /* Update the accordion header text color */
-  .accordion-header .accordion-button {
-    color: red;
-  }
-  
-  .section-expandable .section-expandable-.section-expandable-content-expanded, .section-expandable .section-expandable-content.is--expanded {
+.btn-custom:hover {
+  background-color: #002b5b;
+}
 
-    background-color: green;
+/* Update the accordion header text color */
+.accordion-header .accordion-button {
+  color: red;
+}
 
+.section-expandable .section-expandable-.section-expandable-content-expanded,
+.section-expandable .section-expandable-content.is--expanded {
+  background-color: green;
 }
 
 .accordion-body {
-    background-color: green;
-    /* Add any other custom styles you want */
-  }
-  
+  background-color: green;
+  /* Add any other custom styles you want */
+}
+
 .bg-primary {
-    /* background-color: #818a9d !important; */
-    background-color: #011343 !important;
-    color: white !important;
+  /* background-color: #818a9d !important; */
+  background-color: #011343 !important;
+  color: white !important;
 }
 
 .flip-card {
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    z-index: 2;
-  }
-  
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
-  
-  .accordion {
-    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  perspective: 1000px;
 }
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.link-custom {
+  color: #011343;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    max-width: 57%;
+    z-index: 1000;
+  }
+  

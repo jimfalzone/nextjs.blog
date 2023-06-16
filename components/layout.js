@@ -15,37 +15,6 @@ export default function Layout({ children, home }) {
             </Head>
             <header className={styles.header}>
                 <Navigation />
-                {/* {home ? (
-                    <>
-                        <Image
-                            priority
-                            src="/images/docimage.png"
-                            className={utilStyles.borderCircle}
-                            height={240}
-                            width={180}
-                            alt=""
-                        />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                    </>
-                ) : (
-                    <>
-                        <Link href="/">
-                            <Image
-                                priority
-                                src="/images/docimage.png"
-                                className={utilStyles.borderCircle}
-                                height={160}
-                                width={120}
-                                alt=""
-                            />
-                        </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/" className={utilStyles.colorInherit}>
-                                {name}
-                            </Link>
-                        </h2>
-                    </>
-                )} */}
             </header>
             <main>{children}</main>
             {!home && (

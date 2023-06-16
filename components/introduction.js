@@ -2,7 +2,7 @@ import React from 'react';
 
 const Introduction = () => {
     return (
-        <section>
+        <section id="benefits">
             <div className="container" style={({ marginTop: '150px' })}>
                 <div className="row">
                     <div className="col-lg-12">
