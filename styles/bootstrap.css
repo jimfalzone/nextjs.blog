@@ -104,4 +104,19 @@
     max-width: 57%;
     z-index: 1000;
   }
+
+  .item {
+    display: inline-block;
+    background-color: red;
+  }
+
+
+
+  
+
+
+
+
+
+  
   
