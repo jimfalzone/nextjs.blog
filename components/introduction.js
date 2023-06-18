@@ -8,11 +8,6 @@ const Introduction = () => {
                     <div className="col-lg-12">
                         <h2 className="text-center mb-4">Why Partner With Us?</h2>
                         <div className="accordion" id="accordionExample">
-
-
-
-
-
                             <div className="accordion-item">
                                 <h3 className="accordion-header" id="headingOne">
                                     <button
@@ -37,9 +32,6 @@ const Introduction = () => {
                                     </div>
                                 </div>
                             </div>
-
-
-
                             <div className="accordion-item">
                                 <h3 className="accordion-header" id="headingTwo">
                                     <button

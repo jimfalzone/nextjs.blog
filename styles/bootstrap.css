@@ -99,26 +99,48 @@
 }
 
 .navbar.sticky {
-    position: fixed;
-    top: 0;
-    max-width: 57%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  max-width: 57%;
+  z-index: 1000;
+}
+
+.item {
+  display: inline-block;
+  background-color: red;
+}
+
+@media (min-width: 1151px) {
+  .testimonial-container .testimonial-item {
+    flex-direction: row;
   }
 
-  .item {
-    display: inline-block;
-    background-color: red;
+  .testimonial-container .testimonial-item .testimonial-content {
+    order: 0;
+    margin-right: 20px;
   }
 
+  .testimonial-container .testimonial-item .testimonial-image {
+    order: 1;
+  }
+}
 
+.rounded-custom {
+  border-radius: 10px;
+}
 
+.testimonial-container {
+  position: relative;
+}
 
+.testimonial-card {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out;
+}
 
-  
-
-
-
-
-
-  
-  
+.testimonial-card.active {
+  opacity: 1;
+  visibility: visible;
+}

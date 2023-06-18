@@ -50,12 +50,12 @@ const Navigation = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active link-custom" href="#benefits">
+          <a className="nav-link active link-custom" href="#benefits">
               Benefits
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+          <a className="nav-link active link-custom" href="#testimonials">
               Testimonials
             </a>
           </li>
